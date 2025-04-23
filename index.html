@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Rock-Paper-Scissors Game Portal</h1>
+        
+        <div class="landing-page" id="landing-page">
+            <p class="welcome-message">Welcome to the ultimate Rock-Paper-Scissors experience! Whether you're looking to test your luck against the computer or compete with a friend, you're in the right place.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h2>✅ Choose Your Mode</h2>
+                    <p>Start by selecting your preferred mode:</p>
+                    <div class="mode-selection">
+                        <button class="mode-btn" id="solo-btn">Solo (vs Computer)</button>
+                        <button class="mode-btn" id="multiplayer-btn">Multiplayer (vs Friend)</button>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <h2>✅ Play Instantly</h2>
+                    <p>No downloads, no setup. Just pick your move and play!</p>
+                </div>
+                
+                <div class="feature">
+                    <h2>✅ Track Your Wins</h2>
+                    <p>Keep score and see who's the reigning champion.</p>
+                </div>
+            </div>
+            
+            <p class="tagline">🎉 Simple. Fast. Fun. Ready to play?</p>
+            
+            <button class="start-btn" id="start-btn">👉 Start Game</button>
+        </div>
+        
+        <div class="game-area" id="game-area" style="display: none;">
+            <div class="score-board">
+                <div id="user-label" class="badge">user</div>
+                <div id="computer-label" class="badge">comp</div>
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
+
+            <div class="result">
+                <p>Choose your move — Rock, Paper, or Scissors — and see if you can outsmart the computer.</p>
+            </div>
+
+            <div class="choices-container">
+                <h3 class="choices-title">Select your weapon:</h3>
+                <div class="choices">
+                    <div class="choice-wrapper">
+                        <div class="choice" id="rock">
+                            <img src="images/rock.png" alt="Rock" width="80" height="80">
+                        </div>
+                        <p class="choice-label">Rock</p>
+                    </div>
+                    
+                    <div class="choice-wrapper">
+                        <div class="choice" id="paper">
+                            <img src="images/paper.png" alt="Paper" width="80" height="80">
+                        </div>
+                        <p class="choice-label">Paper</p>
+                    </div>
+                    
+                    <div class="choice-wrapper">
+                        <div class="choice" id="scissors">
+                            <img src="images/scissors.png" alt="Scissors" width="80" height="80">
+                        </div>
+                        <p class="choice-label">Scissors</p>
+                    </div>
+                </div>
+            </div>
+
+            <p id="action-message">Make your move</p>
+            
+            <button class="back-btn" id="back-btn">← Back to Home</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 
